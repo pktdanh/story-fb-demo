@@ -27,6 +27,8 @@ html {
     border-radius: 4px;
     cursor: pointer;
     transition: width 0.2s, height 0.2s;
+    display: flex;
+    flex-direction: column;
 }
 
 .header {
@@ -36,13 +38,13 @@ html {
     justify-content: space-between;
 }
 
-.time-line {
+/* .time-line {
     width: 100%;
     height: 2px;
     background-color: rgb(250, 27, 27);
     animation: a 3s linear;
     display: none;
-}
+} */
 @keyframes a{
     0% {
     transform-origin: 0% 100%;
@@ -77,34 +79,22 @@ html {
     padding: 2px 2px;
 }
 
-.sub-story {
+/* .sub-story {
     width: 200px;
     height: 300px;
     border-radius: 4px;
     cursor: pointer;
     display: none;
-}
+} */
 
-.story-left {
+/* .story-left {
     background: url(./img/2.jpg) top center / cover no-repeat;
     margin-right: 40px;
-    /* width: 200px;
-    height: 300px;
-    margin-right: 40px;
-    border-radius: 4px;
-    cursor: pointer;
-    display: none; */
-}
+} */
 
-.story-right {
+/* .story-right {
     background: url(./img/3.jpg) top center / cover no-repeat;
     margin-left: 40px;
-    /* width: 200px;
-    height: 300px;
-    margin-left: 40px;
-    border-radius: 4px;
-    cursor: pointer;
-    display: none; */
 }
 
 
@@ -121,7 +111,7 @@ html {
 .sub-author__name {
     font-size: 14px;
     color: #fff;
-}
+} */
 
 
 
@@ -137,23 +127,48 @@ html {
     cursor: pointer;
 }
 
-.body {
+.footer {
+    position: absolute;
+    width: 260px;
     display: flex;
     align-items: center;
-
+    justify-content: space-around;
     height: 93%;
+
 }
+
 
 .btn-direct {
     width: 100%;
-    /* display: flex;
-    justify-content: space-between; */
+    display: flex;
+    justify-content: space-between;
     position: relative;
+
 }
 
 .btn-direct .btn-prev,.btn-direct .btn-next {
+    font-size: 30px;
+    color: white;
+    opacity: .5;
+    cursor: pointer;
     display: none;
+}
 
+.content {
+    margin-top: auto;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 24px;
+    color: rgb(255, 0, 0);
+    display: none;
 }
 
 
+/* Mobile */
+@media (max-width: 740px) {
+    .story {
+        height: 150px;
+        width: 80px;
+    }
+    
+}
